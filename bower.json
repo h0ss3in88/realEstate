@@ -1,0 +1,24 @@
+{
+  "name": "realEstate",
+  "description": "nodejs realestate application.",
+  "main": "index.js",
+  "authors": [
+    "Hussein"
+  ],
+  "license": "BSD",
+  "keywords": [
+    "nodejs",
+    "angular",
+    "clientside"
+  ],
+  "homepage": "https://github.com/h0ss3in88/realEstate",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "bower_componetns",
+    "test",
+    "tests"
+  ]
+}

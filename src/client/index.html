@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-ng-app="realestate">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,11 +12,12 @@
     <link rel="stylesheet" href="public/offline/themes/offline-theme-default.css">    
     <link rel="stylesheet" href="public/offline/themes/offline-language-english.css">
     
-    <title>RealEstate</title>
+    <title data-ng-bind="title"></title>
 </head>
 <body>
-    Welcome , Hello World!
+    <div data-ng-include="client/layout/shell.html"></div>
 </body>
+    <!-- load major script  -->
     <script src="public/jquery/dist/jquery.js"></script>
     <script src="public/angular/angular.js"></script>
     <script src="public/angular-ui-router/release/angular-ui-router.js"></script>
@@ -28,9 +29,13 @@
     <script src="public/offline/offline.js"></script>
     <script src="public/offlinejs-simulate-ui/offline-simulate-ui.min.js"></script>
     <script src="public/toastr/toastr.js"></script>
-    <script>
-        $(function () {
-            toastr.success('welcome','RealEstate');
-        })
-    </script>
+    <!-- load application scripts  -->
+    <script src="client/app.js"></script>
+    <script src="client/core/core.module.js"></script>
+    <script src="client/core/constants.js"></script>
+    <script src="client/core/config.js"></script>
+    <script src="client/layout/layout.module.js"></script>    
+    <script src="client/layout/shell.js"></script>
+    <script src="client/dashboard/dashboard.module.js"></script>
+    <script src="client/dashboard/dashboard.controller.js"></script>
 </html>
